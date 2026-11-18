@@ -1,4 +1,4 @@
-/* Local Montserrat fonts (client delivery: fonts folder) */
+﻿/* Local Montserrat fonts (client delivery: fonts folder) */
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -7111,3 +7111,144 @@ iframe {
   }
 }
 
+/* ===== Legislative Drafting: restore original Career Pathways UI ===== */
+.career-pathways-section--pc {
+  background: linear-gradient(135deg, #f7f2fd 0%, #f7eef8 55%, #fbeef7 100%) !important;
+  padding: 64px 24px !important;
+}
+
+.career-pathways-section--pc .career-panel {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: url('../Assets/Career pathways/image/bg image (12).png') center / cover no-repeat;
+  border-radius: 42px;
+  padding: 58px 54px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: none;
+  min-height: 0;
+}
+
+.career-pathways-section--pc .career-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.career-pathways-section--pc .career-left {
+  flex: 0 0 28%;
+  max-width: 28%;
+  color: #fff;
+}
+
+.career-pathways-section--pc .career-left h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(42px, 4.6vw, 72px);
+  line-height: 1.1;
+  margin-bottom: 26px;
+  color: #fff;
+}
+
+.career-pathways-section--pc .career-left p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(16px, 1.4vw, 19px);
+  line-height: 1.6;
+  font-weight: 400;
+  color: #eef0ff;
+  max-width: 94%;
+  margin: 0;
+}
+
+.career-pathways-section--pc .career-cards {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.career-pathways-section--pc .pathway-card {
+  flex: 0 0 calc((100% - 48px) / 3);
+  max-width: 224px;
+  background: linear-gradient(160deg, #ffffff 0%, #eef0fb 100%);
+  border-radius: 26px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 16px 32px rgba(13, 10, 60, 0.28);
+}
+
+.career-pathways-section--pc .pc-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.career-pathways-section--pc .pc-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.career-pathways-section--pc .pc-title {
+  color: #6A0DAD;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0;
+  padding-top: 1px;
+}
+
+.career-pathways-section--pc .pc-desc {
+  color: #3a3a52;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 991.98px) {
+  .career-pathways-section--pc .career-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .career-pathways-section--pc .career-left {
+    flex: none;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .career-pathways-section--pc .career-left p {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .career-pathways-section--pc .pathway-card {
+    flex: 0 0 calc((100% - 22px) / 2);
+    max-width: calc((100% - 22px) / 2);
+  }
+
+  .career-pathways-section--pc .career-panel {
+    padding: 40px 26px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .career-pathways-section--pc .pathway-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
